@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.clear{
+    clear: both;
+}
+.header{
+    position: relative;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+}
+.header .overlay{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.header .navbar{
+    margin-left: 20px;
+}
+.header .navbar ul{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+.header .navbar ul li{
+    font-size: 2vw;
+    list-style: none;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.header .text-header{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);  
+}
+.header .text-header h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.header .text-header p{
+    font-size: 20px;
+}
+/*content*/
+.content{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.content .text-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.content .text-content h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.content .text-content p{
+    font-size: 20px;
+}
+.content .card-content{
+    width: 69%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    grid-gap: 10px;
+}
+.content .card-content .card{
+    width: 300px;
+    height: auto;
+    background-color: #ddd;
+    border-radius: 4px;
+    position: relative;
+}
+.content .card-content .card img{
+    width: 100%;
+    height: 150px;
+}
+.content .card-content .card div{
+    padding-left: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content .card-content .card div p{
+    color: rgb(180, 151, 151);
+}
+.content .card-content .card .count{
+    font-size: 18px;
+    color: blueviolet;
+}
+.content .form-course{
+    margin: auto;
+    text-align: center;
+    width: 62%;
+    padding: 50px;
+    background-color: royalblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 30px;
+    
+}
+.content .form-course h1{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.content .form-course form{
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content .form-course form input{
+    padding: 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+.content .form-course form button{
+    padding: 15px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 2px;
+    font-size:18px;
+    color: #fff;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+    .content .form-course form input{
+        margin-bottom: 10px;
+    }
+}
+.content .select-tools{
+    margin-left: 33%;
+}
+.content .select-tools ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.content .select-tools ul li{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.content .select-tools ul li:first-child{
+    border-bottom: 2px solid slateblue;
+}
+.content.two-content .card-content{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content.two-content .card-content .card{
+    position: relative;
+}
+.content.two-content .card-content .card .prise{
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    background-color: royalblue;
+    font-size: 17px;
+    color: #fff;
+    width: 70px;
+}
+.content.two-content .card-content .card .person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.content.two-content .card-content .card .person span{
+   margin-left: 20px;
+}
+.content.two-content .text-content ul{
+    margin: auto;
+    list-style: none;
+    margin-top: 40px;
+    
+}
+.content.two-content .text-content ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .content.two-content .text-content ul li{
+        font-size: 14px;
+    }
+}
+.content.two-content .text-content ul li:first-child{
+    border-bottom: 2px solid slateblue;
+}
+
+.contact-us{
+    width: 100%;
+    display: flex;
+    background-color: red;
+}
+.contact-us .form-contact{
+    width: 50%;
+    background-color: royalblue;
+    padding: 40px;
+    color: #fff;
+}
+.contact-us .form-contact h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.contact-us .form-contact p{
+    font-size: 18px;
+}
+.contact-us .form-contact form{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+}
+.contact-us .form-contact form input{
+    width: 90%;
+    padding: 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contact-us .form-contact form button{
+    padding: 15px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 2px;
+    font-size:18px;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-us .form-image{
+    width: 50%;
+    height: 650px;
+}
+.contact-us .form-image img{
+    width: 100%;
+    height: 650px;
+}
+@media only screen and (max-width: 1000px) {
+    .contact-us .form-contact{
+        width: 100%;
+    }
+    .contact-us .form-image{
+        display: none;
+    }
+}
+
+.footer {
+    background-color: #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .list {
+    display: flex;
+    list-style: none;
+  }
+  .footer .list > li:not(:last-child) {
+    margin-right: 15px;
+  }
+  @media only screen and (max-width: 700px) {
+    .footer {
+        display: block;
+        line-height: 40px;
+        text-align: center;
+    }
+    .footer .list {
+        justify-content: center;
+    }
+  }
